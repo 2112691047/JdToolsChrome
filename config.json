@@ -5,8 +5,8 @@
   "forceUpdate": false,
   "downloadUrl": "https://github.com/2112691047/JdToolsChrome/releases",
   "releaseNotes": "当前为最新版本",
-  "erpRestrictionEnabled": true,
-  "allowedErps": [dingwenhua1],
+  "erpRestrictionEnabled": false,
+  "allowedErps": [],
   "blockedErps": [jimengyao.6],
   "message": "",
   "checkIntervalMinutes": 60
