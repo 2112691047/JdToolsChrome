@@ -9,5 +9,5 @@
   "allowedErps": [],
   "blockedErps": [jimengyao.6],
   "message": "",
-  "checkIntervalMinutes": 60
+  "checkIntervalMinutes": 1
 }
