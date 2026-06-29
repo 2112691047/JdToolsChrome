@@ -1,0 +1,131 @@
+{
+  "manifest_version": 3,
+  "name": "京东客服工具集",
+  "short_name": "JdTools",
+  "version": "1.0.0",
+  "description": "综合工具集：Uad考核标记 + 京豆查询 + 短信查询（Chrome版）",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "storage",
+    "cookies",
+    "tabs",
+    "declarativeNetRequest",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "http://newadmin.jpos.jd.com/*",
+    "http://kfuad.jd.com/*",
+    "https://kfuad.jd.com/*",
+    "https://crm.jd.com/*",
+    "http://crm.jd.com/*",
+    "https://sms.jd.com/*",
+    "http://sms.jd.com/*",
+    "https://man-sff.jd.com/*",
+    "https://storage.360buyimg.com/*",
+    "https://case-monitor-new.jd.com/*",
+    "*://kfuad.jd.com/*",
+    "*://*.jd.com/*"
+  ],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      { "id": "ruleset_1", "enabled": true, "path": "rules.json" }
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://kfuad.jd.com/*",
+        "https://kfuad.jd.com/*",
+        "https://crm.jd.com/*",
+        "http://crm.jd.com/*",
+        "https://sms.jd.com/*",
+        "http://sms.jd.com/*"
+      ],
+      "js": ["sms/src/token/persist.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://sms.jd.com/*",
+        "http://sms.jd.com/*",
+        "https://crm.jd.com/monitor/monitorCaseInfo/monitorDetail*"
+      ],
+      "js": [
+        "sms/src/core/namespace.js",
+        "sms/src/core/constants.js",
+        "sms/src/core/state.js",
+        "sms/src/core/text.js",
+        "sms/src/core/async.js",
+        "sms/src/core/runtime.js",
+        "sms/src/core/http.js",
+        "sms/src/domain/columns.js",
+        "sms/src/domain/creator-rules.js",
+        "sms/src/domain/tracker.js",
+        "sms/src/domain/matcher.js",
+        "sms/src/domain/crm-range.js",
+        "sms/src/services/user.js",
+        "sms/src/services/sms.js",
+        "sms/src/services/phone.js",
+        "sms/src/services/crm-discover.js",
+        "sms/src/services/crm-parse.js",
+        "sms/src/services/crm-fetch.js",
+        "sms/src/services/crm-resolve.js",
+        "sms/src/services/crm-export-button.js",
+        "sms/src/services/license.js",
+        "sms/src/ui/template.js",
+        "sms/src/ui/blocked.js",
+        "sms/src/ui/view.js",
+        "sms/src/ui/filter.js",
+        "sms/src/ui/panel.js",
+        "sms/src/controllers/window.js",
+        "sms/src/controllers/crm.js",
+        "sms/src/controllers/batch.js",
+        "sms/src/controllers/events.js",
+        "sms/src/csv.js",
+        "sms/src/app.js",
+        "sms/content.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "http://newadmin.jpos.jd.com/tool/beanList*",
+        "https://crm.jd.com/monitor/monitorCaseInfo/monitorDetail*"
+      ],
+      "js": [
+        "jingdou/src/config.js",
+        "jingdou/src/common/utils.js",
+        "jingdou/src/common/runtime.js",
+        "jingdou/src/crm/local-exporter.js",
+        "jingdou/src/crm/source-loader.js",
+        "jingdou/src/ui/template.js",
+        "jingdou/src/ui/render.js",
+        "jingdou/src/ui/panel.js",
+        "jingdou/src/ui/events.js",
+        "jingdou/src/bean/query.js",
+        "jingdou/src/bean/query-kfuad.js",
+        "jingdou/src/export/csv.js",
+        "jingdou/content.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://kfuad.jd.com/*",
+        "*://case-monitor-new.jd.com/*"
+      ],
+      "js": [
+        "uad/content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
