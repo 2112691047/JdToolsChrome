@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "latestVersion": "1.0.2",
-  "minVersion": "1.0.0",
+  "minVersion": "1.0.1",
   "forceUpdate": false,
   "downloadUrl": "https://github.com/2112691047/JdToolsChrome/releases",
   "releaseNotes": "当前为最新版本",
