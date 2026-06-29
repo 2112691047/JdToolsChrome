@@ -2,7 +2,7 @@
   "enabled": true,
   "latestVersion": "1.0.2",
   "minVersion": "1.0.1",
-  "forceUpdate": false,
+  "forceUpdate": true,
   "downloadUrl": "https://github.com/2112691047/JdToolsChrome/releases",
   "releaseNotes": "当前为最新版本",
   "erpRestrictionEnabled": false,
