@@ -7,7 +7,7 @@
   "releaseNotes": "目前为最新版本",
   "erpRestrictionEnabled": false,
   "allowedErps": [],
-  "blockedErps": [],
+  "blockedErps": ["dingwenhua1"],
   "message": "",
   "checkIntervalMinutes": 0.5
 }
