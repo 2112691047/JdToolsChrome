@@ -7,7 +7,7 @@
   "releaseNotes": "需更新！最新版本1.0.2",
   "erpRestrictionEnabled": false,
   "allowedErps": [],
-  "blockedErps": ["jimengyao.6"],
+  "blockedErps": [],
   "message": "需更新！最新版本1.0.2",
   "checkIntervalMinutes": 0.5
 }
