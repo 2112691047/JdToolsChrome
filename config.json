@@ -1,50 +1,36 @@
 {
-  "_description": "京东客服工具集 - 远程配置（请上传至 GitHub 仓库根目录并确保是公开仓库）",
   "enabled": true,
   "min_version": "1.0.0",
   "latest_version": "1.0.0",
   "download_url": "",
   "release_notes": "",
-  "allowed_erps": [],
-  "denied_erps": ["jimengyao.6","dingwenhua1"],
   "admin_erps": [],
+  "allowed_erps": [],
+  "denied_erps": ["dingwenhua1"],
   "modules": {
     "uad": {
       "enabled": true,
-      "allowed_erps": [],
       "denied_erps": [],
+      "allowed_erps": [],
       "min_version": "",
       "latest_version": "",
       "download_url": ""
     },
     "sms": {
       "enabled": true,
-      "allowed_erps": [],
       "denied_erps": [],
+      "allowed_erps": [],
       "min_version": "",
       "latest_version": "",
       "download_url": ""
     },
     "jingdou": {
       "enabled": true,
-      "allowed_erps": [],
       "denied_erps": [],
+      "allowed_erps": [],
       "min_version": "",
       "latest_version": "",
       "download_url": ""
     }
-  },
-  "_usage": {
-    "说明": "所有 erp 不区分大小写",
-    "enabled": "false 表示全局停用所有人",
-    "allowed_erps": "全局白名单，配置了则仅允许这些 ERP 使用（admin_erps 不受此限制）",
-    "denied_erps": "全局黑名单，优先级高于白名单",
-    "admin_erps": "管理员 ERP，始终拥有权限，不受白名单限制",
-    "modules.*.enabled": "false 表示停用该模块",
-    "modules.*.allowed_erps": "模块级白名单，留空则继承全局",
-    "modules.*.denied_erps": "模块级黑名单，留空则继承全局",
-    "min_version": "全局最低版本号，低于此版本会被强制要求升级",
-    "latest_version": "最新版本号（仅展示用）",
-    "download_url": "新版本下载地址，仅支持 http(s)"
   }
 }
