@@ -6,7 +6,7 @@
   "release_notes": "",
   "admin_erps": [],
   "allowed_erps": [],
-  "denied_erps": ["jimengyao.6"],
+  "denied_erps": [],
   "modules": {
     "uad": {
       "enabled": true,
