@@ -6,7 +6,7 @@
   "download_url": "",
   "release_notes": "",
   "allowed_erps": [],
-  "denied_erps": ["jimengyao.6,dingwenhua1"],
+  "denied_erps": ["jimengyao.6","dingwenhua1"],
   "admin_erps": [],
   "modules": {
     "uad": {
