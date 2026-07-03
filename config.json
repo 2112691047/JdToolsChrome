@@ -10,7 +10,7 @@
   "modules": {
     "uad": {
       "enabled": true,
-      "denied_erps": [],
+      "denied_erps": ["lixiang.1188"],
       "allowed_erps": [],
       "min_version": "",
       "latest_version": "",
