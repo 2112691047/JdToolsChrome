@@ -6,11 +6,11 @@
   "release_notes": "",
   "admin_erps": [],
   "allowed_erps": [],
-  "denied_erps": [],
+  "denied_erps": ["lixiang.1188"],
   "modules": {
     "uad": {
       "enabled": true,
-      "denied_erps": ["lixiang.1188"],
+      "denied_erps": [],
       "allowed_erps": [],
       "min_version": "",
       "latest_version": "",
