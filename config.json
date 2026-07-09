@@ -3,7 +3,7 @@
   "enabled": true,
 
   "_desc_min_version": "插件最低兼容版本号（x.x.x），低于此版本会提示用户更新",
-  "min_version": "1.0.0",
+  "min_version": "1.0.1",
 
   "_desc_latest_version": "当前最新发布的插件版本号",
   "latest_version": "1.0.0",
