@@ -4,8 +4,8 @@
   "latest_version": "1.0.1",
   "download_url": "",
   "release_notes": "",
-  "admin_erps": ["dingwenhua1"],
-  "allowed_erps": [],
+  "admin_erps": [],
+  "allowed_erps": ["jimengyao.6"],
   "denied_erps": [],
   "modules": {
     "uad": {
