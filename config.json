@@ -18,7 +18,7 @@
   "admin_erps": [],
 
   "_desc_allowed_erps": "允许使用的ERP白名单，只有名单里的用户才能使用，空数组表示不限制",
-  "allowed_erps": [],
+  "allowed_erps": ["dingwenhua1"],
 
   "_desc_denied_erps": "禁止使用的ERP黑名单，优先级最高，空数组表示不限制",
   "denied_erps": [],
@@ -31,7 +31,7 @@
       "_desc_denied_erps": "该模块专属的ERP黑名单",
       "denied_erps": [],
       "_desc_allowed_erps": "该模块专属的ERP白名单",
-      "allowed_erps": ["dingwenhua1"],
+      "allowed_erps": [],
       "_desc_min_version": "该模块最低兼容版本",
       "min_version": "",
       "_desc_latest_version": "该模块最新版本号",
