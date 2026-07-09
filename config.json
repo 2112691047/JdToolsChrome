@@ -4,7 +4,7 @@
   "latest_version": "1.0.1",
   "download_url": "",
   "release_notes": "",
-  "admin_erps": ["dingwenhua1"],
+  "admin_erps": [],
   "allowed_erps": [],
   "denied_erps": [],
   "modules": {
