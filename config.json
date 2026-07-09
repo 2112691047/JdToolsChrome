@@ -1,36 +1,74 @@
 {
+  "_desc_enabled": "插件全局总开关：true 开启整个插件，false 关闭",
   "enabled": true,
+
+  "_desc_min_version": "插件最低兼容版本号（x.x.x），低于此版本会提示用户更新",
   "min_version": "1.0.0",
-  "latest_version": "1.0.1",
+
+  "_desc_latest_version": "当前最新发布的插件版本号",
+  "latest_version": "1.0.0",
+
+  "_desc_download_url": "新版插件的下载地址，留空表示不检查更新",
   "download_url": "",
+
+  "_desc_release_notes": "版本更新说明文本",
   "release_notes": "",
+
+  "_desc_admin_erps": "管理员ERP账号列表，管理员拥有所有权限，空数组表示不限制",
   "admin_erps": [],
+
+  "_desc_allowed_erps": "允许使用的ERP白名单，只有名单里的用户才能使用，空数组表示不限制",
   "allowed_erps": [],
-  "denied_erps": ["lixiang.1188"],
+
+  "_desc_denied_erps": "禁止使用的ERP黑名单，优先级最高，空数组表示不限制",
+  "denied_erps": [],
+
+  "_desc_modules": "各子模块的独立配置（uad-用户辅助诊断、sms-短信查询、jingdou-京豆查询）",
   "modules": {
     "uad": {
+      "_desc_enabled": "模块是否启用",
       "enabled": true,
+      "_desc_denied_erps": "该模块专属的ERP黑名单",
       "denied_erps": [],
-      "allowed_erps": [],
+      "_desc_allowed_erps": "该模块专属的ERP白名单",
+      "allowed_erps": ["dingwenhua1"],
+      "_desc_min_version": "该模块最低兼容版本",
       "min_version": "",
+      "_desc_latest_version": "该模块最新版本号",
       "latest_version": "",
+      "_desc_download_url": "该模块独立更新链接",
       "download_url": ""
     },
     "sms": {
+      "_desc_enabled": "模块是否启用",
       "enabled": true,
+      "_desc_denied_erps": "该模块专属的ERP黑名单",
       "denied_erps": [],
+      "_desc_allowed_erps": "该模块专属的ERP白名单",
       "allowed_erps": [],
+      "_desc_min_version": "该模块最低兼容版本",
       "min_version": "",
+      "_desc_latest_version": "该模块最新版本号",
       "latest_version": "",
+      "_desc_download_url": "该模块独立更新链接",
       "download_url": ""
     },
     "jingdou": {
+      "_desc_enabled": "模块是否启用",
       "enabled": true,
+      "_desc_denied_erps": "该模块专属的ERP黑名单",
       "denied_erps": [],
+      "_desc_allowed_erps": "该模块专属的ERP白名单",
       "allowed_erps": [],
+      "_desc_min_version": "该模块最低兼容版本",
       "min_version": "",
+      "_desc_latest_version": "该模块最新版本号",
       "latest_version": "",
+      "_desc_download_url": "该模块独立更新链接",
       "download_url": ""
     }
-  }
+  },
+
+  "_desc_summary": "【参数说明总结】enabled-布尔开关；min_version/latest_version-版本号字符串；download_url/release_notes-字符串；admin_erps/allowed_erps/denied_erps-ERP账号字符串数组；modules-各模块独立配置对象。权限优先级：denied_erps > allowed_erps > admin_erps。空数组表示不限制。",
+  "summary": "插件主配置文件，控制全局开关、版本检查、ERP权限及各模块独立配置"
 }
